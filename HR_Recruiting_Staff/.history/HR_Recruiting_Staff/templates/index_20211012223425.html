@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GGG RESTAURANT &mdash;</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/base.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/main.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/grid.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/responsive.css')}}"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'fonts/icomoon/style.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/bootstrap.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/jquery.fancybox.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/jquery-ui.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/owl.carousel.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/owl.theme.default.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/animate.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'fonts/flaticon/font/flaticon.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/aos.css')}}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/style.css')}}"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- Header Begin  -->
+      <header class="header">
+        <div class="grid wide">
+          <div class="header__navbar">
+            <!-- HEADER-LOGO Begin -->
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img
+                  src="{{url_for('static', filename = 'images/logos/logo.png')}}"
+                  alt=""
+                  class="header__logo-img"
+                />
+              </a>
+            </div>
+            <!-- HEADER-LOGO End -->
+
+            <div class="header__login">
+              <a class="header__logo-link">
+                <i class="fas fa-sign-in-alt header__login-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header End  -->
+
+      <!-- Container Begin  -->
+      <div class="container">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container End  -->
+
+      <!-- FOOTER BEGIN -->
+      <!-- <footer class="footer"></footer> -->
+      <!-- FOOTER End -->
+    </div>
+
+    <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery-migrate-3.0.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery-ui.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.stellar.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.fancybox.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/aos.js')}}"></script>
+
+    <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
