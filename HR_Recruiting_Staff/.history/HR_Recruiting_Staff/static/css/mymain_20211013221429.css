@@ -137,23 +137,14 @@ html {
 /* =============================== */
 /* =============================== */
 .app__container-list {
-  display: block;
-  /* margin-top: 80px; */
-  background-color: #ccc;
-  position: fixed;
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%;
-}
-
-.new__post {
-  margin-left: 20%;
+  /* display: flex; */
+  /* flex-direction: column; */
   margin-top: 80px;
-  display: block;
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  background-color: #ccc;
+  /* position: fixed; */
 }
 
-.new__post-list {
+.category-list {
 }
 /* <!-- Container END  --> */
 /* =============================== */

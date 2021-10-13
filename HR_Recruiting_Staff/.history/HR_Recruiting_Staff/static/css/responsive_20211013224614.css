@@ -56,12 +56,12 @@
     justify-content: center;
   }
 
+
   .new__post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9%;
-    width: 1200px;
+    /* margin-left: 20%; */
+    display: 100%;
+    margin-top: 80px;
+    display: block;
   }
 }
 

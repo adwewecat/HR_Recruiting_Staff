@@ -57,11 +57,6 @@
   }
 
   .new__post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9%;
-    width: 1200px;
   }
 }
 

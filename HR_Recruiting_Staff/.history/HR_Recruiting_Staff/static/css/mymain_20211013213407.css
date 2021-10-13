@@ -136,24 +136,14 @@ html {
 /* <!-- Container Begin  --> */
 /* =============================== */
 /* =============================== */
-.app__container-list {
+.app__content {
   display: block;
-  /* margin-top: 80px; */
-  background-color: #ccc;
-  position: fixed;
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%;
-}
-
-.new__post {
-  margin-left: 20%;
   margin-top: 80px;
-  display: block;
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  background-color: #ccc;
 }
 
-.new__post-list {
+.category {
+  /* position: fixed; */
 }
 /* <!-- Container END  --> */
 /* =============================== */

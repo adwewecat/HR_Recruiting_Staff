@@ -147,13 +147,14 @@ html {
 
 .new__post {
   margin-left: 20%;
-  margin-top: 80px;
   display: block;
   flex: 0 0 83.33333%;
   max-width: 83.33333%;
 }
 
-.new__post-list {
+margin-top: 80px;
+.new__post-list{
+
 }
 /* <!-- Container END  --> */
 /* =============================== */

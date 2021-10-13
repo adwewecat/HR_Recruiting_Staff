@@ -56,13 +56,8 @@
     justify-content: center;
   }
 
-  .new__post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9%;
-    width: 1200px;
-  }
+
+  
 }
 
 /* 740px =  740px = 46.25em , 1023px = 63.9375em*/

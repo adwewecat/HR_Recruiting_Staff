@@ -57,11 +57,10 @@
   }
 
   .new__post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9%;
-    width: 1200px;
+    margin-left: 0%;
+    display: block;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
 }
 

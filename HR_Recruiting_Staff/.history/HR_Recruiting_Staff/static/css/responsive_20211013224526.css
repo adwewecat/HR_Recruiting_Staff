@@ -56,13 +56,20 @@
     justify-content: center;
   }
 
-  .new__post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 9%;
-    width: 1200px;
-  }
+.app__container-list {
+  display: none;
+  /* margin-top: 80px; */
+  background-color: #ccc;
+
+}
+
+.new__post {
+  margin-left: 20%;
+  margin-top: 80px;
+  display: block;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
 }
 
 /* 740px =  740px = 46.25em , 1023px = 63.9375em*/
