@@ -1,0 +1,12 @@
+CREATE TABLE Brand(
+id INT IDENTITY PRIMARY KEY,
+ten_brand NVARCHAR(200),
+ten_viet_tat NVARCHAR(50),
+img NVARCHAR(250),
+user_them NVARCHAR(50),
+user_update NVARCHAR(50),
+ngay_them DATETIME,
+ngay_update DATETIME,
+stt NVARCHAR(100),
+active BIT
+)
