@@ -24,3 +24,66 @@ ngay_update DATETIME,
 stt NVARCHAR(100),
 active BIT
 )
+
+
+CREATE TABLE District(
+id INT IDENTITY PRIMARY KEY,
+district_name NVARCHAR(50),
+ten_viet_tat NVARCHAR(50),
+stt NVARCHAR(100),
+active BIT
+)
+
+
+CREATE TABLE Regions(
+id INT IDENTITY PRIMARY KEY,
+name NVARCHAR(50),
+ten_viet_tat NVARCHAR(50),
+khu_vuc NVARCHAR(100),
+vung_mien NVARCHAR(50),
+active BIT
+)
+
+
+
+CREATE TABLE Restaurants(
+id INT IDENTITY PRIMARY KEY,
+name NVARCHAR(100),
+brand NVARCHAR(20),
+address NVARCHAR(250),
+district NVARCHAR(20),
+sdt NVARCHAR(20),
+ten_viet_tat NVARCHAR(50),
+mail_res NVARCHAR(100),
+Regions_name NVARCHAR(50),
+stt NVARCHAR(100),
+active BIT
+)
+
+
+CREATE TABLE Newpost(
+id INT IDENTITY PRIMARY KEY,
+restaurant_name NVARCHAR(100),
+brand_name NVARCHAR(100),
+district_name NVARCHAR(50),
+region_name NVARCHAR(50),
+restaurant_address NVARCHAR(250),
+restaurant_sdt NVARCHAR(20),
+restaurant_mail NVARCHAR(100),
+time_from time,
+time_to time,
+staff_quantity NVARCHAR(50),
+active BIT
+)
+
+
+
+CREATE TABLE User_all(
+id INT IDENTITY PRIMARY KEY,
+username NVARCHAR(100),
+fullname NVARCHAR(100),
+pass NVARCHAR(200),
+phan_cap NVARCHAR(50),
+active BIT
+)
+

@@ -222,7 +222,7 @@ html {
   flex-direction: column;
   height: 68%;
   overflow: hidden;
-  
+  align-items: ;
 }
 
 .new__post-content-list-comment-item {
@@ -248,20 +248,10 @@ html {
 }
 
 
-.new__post-content-list-time {
-  padding-top: 10px;
-  height: 30px;
-  display: flex;
-  align-items: flex-end;
-}
+
 
 /* <!-- Container END  --> */
 /* =============================== */
-
-
-.modal-address{
-  padding-bottom: 5px;
-}
 
 
 

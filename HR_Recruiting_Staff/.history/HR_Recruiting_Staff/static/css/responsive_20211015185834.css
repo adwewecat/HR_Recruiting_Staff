@@ -62,24 +62,6 @@
     align-items: center;
     margin-left: 9%;
   }
-
-.new__post-content-list-comment-item {
-  font-size: 10px;
-}
-.new__post-content-item-name {
-  font-size: 10px;
-}
-.new__post-item-link {
-  height: 70px;
-}
-.new__post-content-list-time{
-  padding-top: 0;
-  height: 25px;
-}
-
-
-
-
 }
 
 /* 740px =  740px = 46.25em , 1023px = 63.9375em*/
@@ -133,6 +115,20 @@
     will-change: opacity, transform; /*Tối ưu chuyển động animation cho nhiều trình duyệt*/
     display: none;
   }
+
+
+.new__post-content-list-comment-item {
+  font-size: 10px;
+}
+.new__post-content-item-name {
+  font-size: 10px;
+}
+.new__post-item-link {
+  height: 80px;
+}
+.new__post-content-list-time{
+  padd
+}
 
 
 

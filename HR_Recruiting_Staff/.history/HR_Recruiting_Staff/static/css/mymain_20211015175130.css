@@ -249,19 +249,13 @@ html {
 
 
 .new__post-content-list-time {
-  padding-top: 10px;
-  height: 30px;
+  height: ;
   display: flex;
   align-items: flex-end;
 }
 
 /* <!-- Container END  --> */
 /* =============================== */
-
-
-.modal-address{
-  padding-bottom: 5px;
-}
 
 
 

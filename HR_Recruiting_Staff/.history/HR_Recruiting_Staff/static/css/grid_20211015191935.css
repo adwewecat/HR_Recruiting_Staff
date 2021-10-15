@@ -143,7 +143,7 @@
 Tablet and PC low resolution --> PC độ phân giải thấp */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
   .wide {
-    width: 45.25em; /*644px = 40.25em*/
+    width: 50.25em; /*644px = 40.25em*/
   }
 }
 
