@@ -70,7 +70,7 @@ region_id NVARCHAR(50),
 note NVARCHAR(250),
 time_from time,
 time_to time,
-staff_quantity NVARCHAR(50),
+staff_quantity int,
 user_dang_bai NVARCHAR(50),
 active BIT
 )
