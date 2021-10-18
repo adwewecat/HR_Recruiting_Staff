@@ -378,11 +378,11 @@ html {
 .nha_hang_thongtin-tieu-de {
   display: flex;
   margin-top: 10px;
-
+  align-items: center;
   color: #efa71c;
   font-weight: 700;
   font-size: 1.4rem;
-
+  margin-left: 34px;
 }
 
 

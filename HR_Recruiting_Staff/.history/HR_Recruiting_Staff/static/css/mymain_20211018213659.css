@@ -378,14 +378,16 @@ html {
 .nha_hang_thongtin-tieu-de {
   display: flex;
   margin-top: 10px;
-
+  align-items: center;
   color: #efa71c;
   font-weight: 700;
   font-size: 1.4rem;
-
+  margin-left: 34px;
 }
 
-
+.nha_hang_thongtin-tieu-de-item {
+  margin: 0;
+}
 
 
 .nha_hang_thongtin-chitiet__list:nth-child(1){
@@ -423,24 +425,4 @@ html {
 .nha_hang_danh_sach__new-list {
   height: 300px;
   background-color: #fff;
-  margin-top: 16px;
-  overflow-x: auto;
 }
-
-
-.nha_hang_danh_sach__new-item {
-  height: 60px;
-  background-color: #efa71c;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-.l-6 {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.nha_hang_danh_sach__new-fix-row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-

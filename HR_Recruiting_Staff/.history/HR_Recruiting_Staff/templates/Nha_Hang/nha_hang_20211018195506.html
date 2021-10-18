@@ -69,115 +69,63 @@
                 <div class="nha_hang_create-tieu-de">
                   <p class="nha_hang_create-tieu-de-item">Đăng Bài Tuyển Dụng</p>
                 </div>
-                <form class="needs-validation" novalidate>
-                  <div class="nha_hang_create__soluong">
-                    <input class="nha_hang_create__item" type="number" min="1" id="validationCustom01"
-                      placeholder="Số Lượng Người Muốn Tuyển" required>
-                    <div class="invalid-feedback">
-                      Vui lòng nhập số lượng > 0
+                  <form class="needs-validation" novalidate>
+                    <div class="nha_hang_create__soluong">
+                      <input class="nha_hang_create__item" type="number" min="1"  id="validationCustom01" placeholder="Số Lượng Người Muốn Tuyển" required>
+                        <div class="invalid-feedback">
+                          Vui lòng nhập số lượng > 0
+                        </div>   
                     </div>
-                  </div>
-
-                  <div class="nha_hang_create__note-them">
-                    <textarea class="nha_hang_create__item" id="validationCustom02" rows="6" cols="44"
-                      placeholder="Note Thêm ==> VD: Cần 3 Phục Vụ"></textarea>
-                  </div>
-                  <div class="button__dang-tin">
-                    <button class="button__dang-tin-item" type="submit">Đăng Bài</button>
-                  </div>
-                </form>
+                    
+                    <div class="nha_hang_create__note-them">
+                      <textarea class="nha_hang_create__item" id="validationCustom02" rows="6" cols="44" placeholder ="Note Thêm ==> VD: Cần 3 Phục Vụ"></textarea>
+                    </div>
+                    <div class="button__dang-tin">
+                      <button class="button__dang-tin-item" type="submit">Đăng Bài</button>
+                    </div>
+                  </form>
               </div>
             </div>
 
 
 
             <div class="col l-6 c-12">
-              <div class="nhahang__bantin">
-                <div class="nha_hang_danh_sach_new">
-                  <div class="nha_hang_danh_sach__tieude">
-                    <span class="nha_hang_danh_sach__tieude-item">
-                      Bản Tin Còn Sử Dụng
-                    </span>
-                  </div>
-                  <div class="nha_hang_danh_sach__new-list">
-
-                    <div class="row nha_hang_danh_sach__new-fix-row">
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-                      <div class="l-6 c-12">
-                        <div class="nha_hang_danh_sach__new-item">
-
-                        </div>
-                      </div>
-
-
-
-                    </div>
-                  </div>
-                </div>
+              <div class="nha_hang_danh_sach_new">
+                                
               </div>
             </div>
 
 
             <div class="col l-2 c-12">
               <div class="nha_hang_danh_sach_thong-tin">
-                <div class="nha_hang_thongtin-tieu-de">
+                 <div class="nha_hang_thongtin-tieu-de">
                   <p class="nha_hang_thongtin-tieu-de-item">Thông Tin</p>
-                </div>
+                </div>   
 
                 <div class="nha_hang_thongtin-chitiet">
                   <div class="nha_hang_thongtin-chitiet__list">
 
                     <div class="nha_hang_thongtin-chitiet__item">
                       <span class="nha_hang_thongtin-chitiet__item-item">Nhà Hàng : </span>
-                      Hutong Nguyễn Tri Phương
+                        Hutong Nguyễn Tri Phương
                     </div>
 
                     <div class="nha_hang_thongtin-chitiet__item">
                       <span class="nha_hang_thongtin-chitiet__item-item">Số điện thoại : </span>
-                      0284484498
+                        028
                     </div>
 
                     <div class="nha_hang_thongtin-chitiet__item">
-                      <span class="nha_hang_thongtin-chitiet__item-item">Địa Chỉ : </span>
-                      134 Nguyen Tri Phuong, Phuong 9, Quan 5, Ho Chi Minh
-                    </div>
-
+                      <span class="nha_hang_thongtin-chitiet__item-item">Nhà Hàng : </span>
+                        Hutong Nguyễn Tri Phương
+                    </div>                      
+                    
                   </div>
                 </div>
-
-
+                
+          
               </div>
-            </div>
+            </div>   
 
 
 
@@ -334,27 +282,27 @@
   </script>
 
 
-  <!-- Vadidation Begin -->
-  <script>
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-  </script>
-  <!-- Vadidation End -->
+                <!-- Vadidation Begin -->
+                <script>
+                  (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                      var forms = document.getElementsByClassName('needs-validation');
+                      // Loop over them and prevent submission
+                      var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                          if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                          }
+                          form.classList.add('was-validated');
+                        }, false);
+                      });
+                    }, false);
+                  })();
+                </script>
+                <!-- Vadidation End -->
 
 </body>
 

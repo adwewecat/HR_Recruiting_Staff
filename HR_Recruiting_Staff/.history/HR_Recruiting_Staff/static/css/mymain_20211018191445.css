@@ -287,7 +287,7 @@ html {
 
 
 .nha-hang__container {
-  background-color: rgba(183, 183, 183, 0.1);
+  background-color: rgba(183, 102, 102, 0.1);
   height: 650px;
   
 }
@@ -306,8 +306,7 @@ html {
 } */
 
 .nha_hang_danh_sach_new{
-  border-left: 2px solid #ccc;
-  border-right: 2px solid #ccc;
+  background-color: yellow;
   height: 650px;
 }
 
@@ -327,8 +326,7 @@ html {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 1.4rem;
-  margin-top: 10px;
+  font-size: 2rem;
 }
 
 
@@ -340,7 +338,6 @@ html {
   outline: none;
   border-radius: 5px;
   min-height: 42px;
-  padding-left: 16px;
 }
 .button__dang-tin,
 .nha_hang_create__soluong,
@@ -377,70 +374,14 @@ html {
 
 .nha_hang_thongtin-tieu-de {
   display: flex;
-  margin-top: 10px;
-
+  /* justify-content: center; */
+  align-items: center;
   color: #efa71c;
   font-weight: 700;
-  font-size: 1.4rem;
-
+  font-size: 1.2rem;
+  margin-left: 34px;
 }
 
-
-
-
-.nha_hang_thongtin-chitiet__list:nth-child(1){
-  padding-top: 10px;
+.nha_hang_thongtin-tieu-de-item {
+  margin: 0;
 }
-
-.nha_hang_thongtin-chitiet__item {
-  padding-bottom: 15px;
-  font-size: 18px;
-}
-
-
-.nha_hang_thongtin-chitiet__item-item {
-  font-weight: 500;
-  color: #efa71c;
-}
-
-
-
-
-.nha_hang_danh_sach__tieude {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.nha_hang_danh_sach__tieude-item {
-  color: #efa71c;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
-
-.nha_hang_danh_sach__new-list {
-  height: 300px;
-  background-color: #fff;
-  margin-top: 16px;
-  overflow-x: auto;
-}
-
-
-.nha_hang_danh_sach__new-item {
-  height: 60px;
-  background-color: #efa71c;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-.l-6 {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.nha_hang_danh_sach__new-fix-row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
