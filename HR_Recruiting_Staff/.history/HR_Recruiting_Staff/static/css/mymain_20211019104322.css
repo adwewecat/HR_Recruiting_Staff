@@ -151,7 +151,6 @@ html {
 
 
 .app__container-list {
-  width: 222px;
   display: block;
   /* margin-top: 80px; */
   background-color: rgba(226, 226, 226,0.3);
@@ -345,7 +344,7 @@ html {
 }
 .button__dang-tin,
 .nha_hang_create__soluong,
-.nha_hang_create__gio,
+
 .nha_hang_create__note-them {
   margin-left: 15px;
   margin-bottom: 15px;
@@ -354,20 +353,7 @@ html {
 
 .nha_hang_create__gio {
   display: flex;
-  /* flex-direction: column; */
-}
-
-/* .nha_hang_create__item-gio {
-  margin-right: 10px;
-} */
-
-.nha_hang_create__gio-den {
-  width: 40px;
-  outline: none;
-  border: 0;
-  margin: auto;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  
 }
 
 .button__dang-tin {
@@ -450,10 +436,9 @@ html {
 
 .nha_hang_danh_sach__new-item {
   height: 60px;
-  background-color: #ffe7b9;
+  background-color: #efa71c;
   margin-bottom: 10px;
   overflow: hidden;
-  padding-left: 10px;
 }
 .l-6 {
   padding-left: 2px;

@@ -151,7 +151,6 @@ html {
 
 
 .app__container-list {
-  width: 222px;
   display: block;
   /* margin-top: 80px; */
   background-color: rgba(226, 226, 226,0.3);
@@ -362,12 +361,7 @@ html {
 } */
 
 .nha_hang_create__gio-den {
-  width: 40px;
-  outline: none;
-  border: 0;
-  margin: auto;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  width: 60px;
 }
 
 .button__dang-tin {
@@ -450,10 +444,9 @@ html {
 
 .nha_hang_danh_sach__new-item {
   height: 60px;
-  background-color: #ffe7b9;
+  background-color: #efa71c;
   margin-bottom: 10px;
   overflow: hidden;
-  padding-left: 10px;
 }
 .l-6 {
   padding-left: 2px;

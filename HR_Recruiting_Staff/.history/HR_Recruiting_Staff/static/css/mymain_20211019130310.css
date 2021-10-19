@@ -151,7 +151,7 @@ html {
 
 
 .app__container-list {
-  width: 222px;
+  
   display: block;
   /* margin-top: 80px; */
   background-color: rgba(226, 226, 226,0.3);
@@ -450,10 +450,9 @@ html {
 
 .nha_hang_danh_sach__new-item {
   height: 60px;
-  background-color: #ffe7b9;
+  background-color: #efa71c;
   margin-bottom: 10px;
   overflow: hidden;
-  padding-left: 10px;
 }
 .l-6 {
   padding-left: 2px;
