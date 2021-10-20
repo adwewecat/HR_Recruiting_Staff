@@ -71,8 +71,9 @@ note NVARCHAR(250),
 time_from time,
 time_to time,
 staff_quantity int,
+staff_quantity_thucte int,
 user_dang_bai NVARCHAR(50),
-ngay_hoan_thanh DATETIME
+ngay_hoan_thanh DATETIME,
 active BIT
 )
 
@@ -84,6 +85,7 @@ username NVARCHAR(100),
 fullname NVARCHAR(100),
 pass NVARCHAR(200),
 phan_cap NVARCHAR(50),
+nha_hang NVARCHAR(50),
 active BIT
 )
 
