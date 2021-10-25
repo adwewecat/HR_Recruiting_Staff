@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GGG Tuyển Dụng</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'fonts/icomoon/style.css')}}" />
+  <link rel="icon" href="{{url_for('static', filename = 'images/logos/icon_logo.png')}}" type="image/x-icon" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/jquery.fancybox.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/jquery-ui.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.carousel.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.theme.default.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/animate.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'fonts/flaticon/font/flaticon.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/aos.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/mymain.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/grid.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/responsive.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'icons/fontawesome-free-5.15.4/css/all.css')}}" />
+</head>
+
+<body>
+  <div class="main">
+    <!-- Header Begin  -->
+    <header class="header__nha-hang">
+      <div class="grid wide">
+        <div class="header__navbar">
+          <!-- HEADER-LOGO Begin -->
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <img src="{{url_for('static', filename = 'images/logos/logo.png')}}" alt="" class="header__logo-img" />
+            </a>
+          </div>
+          <!-- HEADER-LOGO End -->
+
+          <div class="header__login">
+            <a class="header__logo-link" type="button" data-toggle="modal" data-target="#DANGXUAT">
+              <i class="fas fa-user header__login-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End  -->
+
+
+
+
+
+    <!-- Container Begin  -->
+    <div class="app__container__nha-hang">
+      <div class="grid wide">
+        <div class="nha-hang__container">
+          <div class="row">
+
+
+
+            <div class="col l-4 c-12">
+              <div class="nha_hang_create">
+                <div class="nha_hang_create-tieu-de">
+                  <p class="nha_hang_create-tieu-de-item">Đăng Bài Tuyển Dụng</p>
+                </div>
+                <form method="POST" class="needs-validation" novalidate>
+                  <div class="nha_hang_create__soluong">
+                    <input name="nhahang_dangtin_soluong" class="nha_hang_create__item" type="number" min="1"
+                      id="validationCustom01" placeholder="Số Lượng Người Muốn Tuyển" required>
+                    <div class="invalid-feedback">
+                      Vui lòng nhập số lượng > 0
+                    </div>
+                  </div>
+
+                  <div class="nha_hang_create__gio">
+                    <input name="nhahang_dangtin_gio_from" class="nha_hang_create__item nha_hang_create__item-gio"
+                      type="time" min="00:00" max="23:59" value="08:00" id="validationCustom01" required>
+                    <input class="nha_hang_create__gio-den" type="text" value="Đến" disabled>
+                    <input name="nhahang_dangtin_gio_to" class="nha_hang_create__item" type="time"
+                      id="validationCustom01" min="00:00" max="23:59" value="20:00" required>
+                    <div class="invalid-feedback">
+                      Vui lòng nhập Thời Gian
+                    </div>
+                  </div>
+
+
+
+                  <div class="nha_hang_create__note-them">
+                    <textarea name="nhahang_dangtin_note_vitri" class="nha_hang_create__item" id="validationCustom02"
+                      rows="6" cols="44" placeholder="Vị Trí ==> VD: Thu Ngân / Phục Vụ"></textarea>
+                  </div>
+                  <div class="button__dang-tin">
+                    <button class="button__dang-tin-item" type="submit">Đăng Bài</button>
+                  </div>
+{{DANG}}
+                </form>
+              </div>
+            </div>
+
+
+
+            <div class="col l-6 c-12">
+              <div class="nhahang__bantin">
+                <div class="nha_hang_danh_sach_new">
+                  <div class="nha_hang_danh_sach__tieude">
+                    <span class="nha_hang_danh_sach__tieude-item">
+                      Bản Tin Còn Sử Dụng
+                    </span>
+                  </div>
+                  <div class="nha_hang_danh_sach__new-list">
+                    <div class="row nha_hang_danh_sach__new-fix-row">
+
+
+                      {{HIEN_THI_NHA_HANG_TIN_CON_SU_DUNG}}
+
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="nha_hang_danh_sach__tieude">
+                    <span class="nha_hang_danh_sach__tieude-item">
+                      Bản Tin Đã Hoàn Thành
+                    </span>
+                  </div>
+                  <div class="nha_hang_danh_sach__old-list">
+                    <div class="row nha_hang_danh_sach__new-fix-row">
+
+                      <!-- <div class="l-6 c-12">
+                        <div href="/" class="nha_hang_danh_sach__new-item">
+                          <div class="nhahang__new--time">
+                            <span class="nhahang__new--time-item">
+                              Thời Gian : 08:00
+                              <i class="fas fa-arrow-right"></i>
+                              21:00
+                            </span>
+                          </div>
+                          <div class="nhahang__new--vitri">
+                            <span class="nhahang__new--vitri-item">
+                              Vị Trí : Thu Ngân / Phục Vụ
+                            </span>
+                            <span class="nhahang__new--vitri-item nhahang__new--vitri-item-soluong">
+                              Số Lượng : 20
+                            </span>
+                          </div>
+                        </div>
+                      </div> -->
+
+
+                      {{HIEN_THI_HTML_THONG_TIN_NHA_HANG_HOAN_THANH}}
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col l-2 c-12">
+              <div class="nha_hang_danh_sach_thong-tin">
+
+                <div class="nha_hang_thongtin-tieu-de">
+                  <p class="nha_hang_thongtin-tieu-de-item">Thông Tin</p>
+                </div>
+
+                {{HIEN_THI_HTML_THONG_TIN_NHA_HANG}}
+
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+        <!-- <div class="new__post-nha_hang">
+          <div class="new__post-list">
+              <div class="tieu_de_bai_dang_new">
+                <span class ="tieu_de_bai_dang_new__item">Danh Sách Bài Đăng Còn Hiệu Lực</span>
+              </div>            
+            <div class="row">
+              
+
+            </div>
+          </div>
+        </div> -->
+
+
+
+      </div>
+    </div>
+    <!-- Container End  -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER BEGIN -->
+    <!-- <footer class="footer"></footer> -->
+    <!-- FOOTER End -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="LOGIN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Đăng Nhập Vào Hệ Thống</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="user-name" class="col-form-label">Tên Đăng Nhập:(*)</label>
+              <input name="user_dang_nhap" type="text" class="form-control" id="user-name" value="" required>
+            </div>
+            <div class="form-group">
+              <label for="pass" class="col-form-label">Mật Khẩu:(*)</label>
+              <input name="pass" type="password" class="form-control" id="pass" value="" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" id="btnLogin" class="button__dang-tin-item" onclick="loadDoc()">Login</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  {{THONG_TIN_DANG_XUAT}}
+
+
+
+
+
+
+
+  <!-- ================= Load chờ đợi xử lý============================================ -->
+  <div class="modal fade" id="modal_load" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+      <!--Content-->
+      <div class="modal-content text-center">
+        <!--Header-->
+        <div class="modal-header d-flex justify-content-center">
+          <p class="heading">Đang Xử Lý Vui Lòng Đợi</p>
+        </div>
+
+        <!--Body-->
+        <div class="modal-body">
+
+          <img src="{{url_for('static', filename = 'images/icons/1.gif')}}">
+
+        </div>
+
+        <!--Footer-->
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Modal Poll  -->
+  <!-- ================= Load chờ đợi xử lý============================================ -->
+
+
+
+
+
+
+
+  <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery-ui.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery.stellar.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery.fancybox.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/aos.js')}}"></script>
+
+  <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+  <script>
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+
+
+  <!-- Vadidation Begin -->
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  <!-- Vadidation End -->
+
+
+  <script>
+
+
+  </script>
+
+
+</body>
+
+</html>

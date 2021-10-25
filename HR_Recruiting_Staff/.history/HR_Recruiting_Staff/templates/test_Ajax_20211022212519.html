@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>The XMLHttpRequest Object</h2>
+
+    <div id="demo">
+        <p>GET DATA TỪ API</p>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "/ok");
+            xhttp.send();
+        }
+    </script>
+
+
+
+
+
+
+    <div id="onPostt_nhe">
+        <p>POST DATA lên API để xử lý</p>
+        <button type="button" onclick="onPostt()">Change Content</button>
+    </div>
+<script>
+    function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "/ok");
+        xhttp.send();
+    }
+</script>
+
+
+
+</body>
+
+</html>

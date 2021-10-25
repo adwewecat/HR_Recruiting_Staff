@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GGG Tuyển Dụng</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'fonts/icomoon/style.css')}}" />
+  <link rel="icon" href="{{url_for('static', filename = 'images/logos/icon_logo.png')}}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/jquery.fancybox.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/jquery-ui.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.carousel.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.theme.default.min.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/animate.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'fonts/flaticon/font/flaticon.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/aos.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/mymain.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/grid.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/responsive.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename = 'icons/fontawesome-free-5.15.4/css/all.css')}}" />
+</head>
+
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<div id="demo">
+  <p>GET DATA TỪ API</p>
+  <button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+  function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "/ok");
+    xhttp.send();
+  }
+</script>
+
+
+
+
+
+
+<div id="onPostt_nhe">
+  <p>POST DATA lên API để xử lý</p>
+  <form action="POST">
+    <input type="text" required>
+    <button type="submit"  onclick="onPostt()">Change Content</button>
+  </form>
+</div>
+<script>
+  function onPostt() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      document.getElementById("onPostt_nhe").innerHTML = this.responseText;
+    }
+    xhttp.open("POST", "/onPostt_API");
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("fname=Henry&lname=Ford");
+
+    xhttp.onreadystatechage = function(){
+      if(this.readyState == 2){
+        console.log('Đang Gửi yêu cầu')
+      }
+      if(this.readyState == 3){
+        console.log('Đang Gửi yêu cầu')
+      }
+      if(this.readyState == 4){
+        console.log('Đang Gửi yêu cầu')
+      }
+      
+    }
+
+  }
+</script>
+
+
+
+
+
+
+  <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery-migrate-3.0.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery-ui.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/popper.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery.stellar.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/jquery.fancybox.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'js/aos.js')}}"></script>
+
+  <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+  <script>
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
