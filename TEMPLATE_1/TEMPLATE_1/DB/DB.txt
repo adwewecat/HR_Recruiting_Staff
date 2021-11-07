@@ -1,0 +1,15 @@
+pip install Flask
+pip install flask
+pip install flask_checditor
+pip install wtforms
+pip install sqlalchemy
+pip install flask_mail
+pip install pymysql
+pip install flask_ckeditor
+pip install pyinstaller
+pip install flask_wtf
+pip install pyodbc
+pip install openpyxl
+
+
+
