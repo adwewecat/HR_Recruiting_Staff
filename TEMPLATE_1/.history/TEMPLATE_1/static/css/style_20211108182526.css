@@ -375,7 +375,7 @@ body
  padding: 10px;
 }
 
-.details .recentOrders table tr td:last-child
+.details .recentorders table tr td:last-child
 {
   text-align: end;
 }
@@ -421,15 +421,14 @@ body
 .status.inprogress
 {
  padding: 2px 4px;
- background: #1795ce;
- color: var(--white);
+ background: # color: var(--white);
  border-radius: 4px;
  font-size: 14px;
  font-weight: 500;
 }
 
 
-/* 54p17s */
+
 
 
 

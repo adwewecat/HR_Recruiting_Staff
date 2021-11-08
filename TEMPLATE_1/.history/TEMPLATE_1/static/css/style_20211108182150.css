@@ -375,7 +375,7 @@ body
  padding: 10px;
 }
 
-.details .recentOrders table tr td:last-child
+.details .recentorders table tr td:last-child
 {
   text-align: end;
 }
@@ -401,27 +401,7 @@ body
 .status.pending
 {
  padding: 2px 4px;
- background: #f9ca3f;
- color: var(--white);
- border-radius: 4px;
- font-size: 14px;
- font-weight: 500;
-}
-
-.status.return
-{
- padding: 2px 4px;
- background: #f00;
- color: var(--white);
- border-radius: 4px;
- font-size: 14px;
- font-weight: 500;
-}
-
-.status.inprogress
-{
- padding: 2px 4px;
- background: #1795ce;
+ background: #f9caf3;
  color: var(--white);
  border-radius: 4px;
  font-size: 14px;
@@ -429,7 +409,7 @@ body
 }
 
 
-/* 54p17s */
+
 
 
 
