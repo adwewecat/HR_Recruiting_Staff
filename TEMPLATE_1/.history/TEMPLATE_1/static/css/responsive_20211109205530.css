@@ -70,18 +70,10 @@
         z-index: 10000;
         right: 0;
         left: initial;
-        color: #fff;
     }
     .toggle.active::before
     {
         color: #fff;
-    }
-    
-    .main,
-    .main.active
-    {
-        width: 100%;
-        left: 0;
     }
 
 }

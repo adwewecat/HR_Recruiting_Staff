@@ -1,0 +1,14 @@
+Comedia (max-width: 992px)
+{
+   .navigation
+  {
+     Left: -300px;
+   .navigation.active
+  {
+     Left: 0;
+  }
+   .main{
+       width: 100%;
+        left: 0;
+   }
+}

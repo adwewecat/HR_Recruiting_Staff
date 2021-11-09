@@ -432,7 +432,6 @@ body
 {
  position: relative;
  min-height: 530px;
- background: #fff;
  padding: 20px;
 }
 
@@ -446,42 +445,6 @@ body
  overflow: hidden;
 }
 
-
-.details .recentCustomers .imgBx img
-{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- object-fit: cover;
-}
-
-
-.details .recentCustomers table tr td h4 span
-{
-  font-size: 14px;
-  color: #999;
-}
-
-
-.details .recentCustomers table tr:hover,
-.details .recentCustomers table tr:hover td h4 span
-{
- background: #03a9f4;
-  color: #fff;
-}
-.details .recentCustomers table tr td
-{
-  padding: 7px 10px;
-}
-
-.details .recentCustomers table tr td h4
-{
- font-size: 16px;
- font-weight: 500;
- Line-height: 1.2em;
-}
 
 
 

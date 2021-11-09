@@ -1,0 +1,24 @@
+@media (max-width: 992px)
+{
+   .navigation
+  {
+     left: -300px;
+  }
+   .navigation.active
+  {
+     left: 0;
+  }
+   .main{
+    width: 100%;
+    left: 0;
+   }
+   .main.active
+    {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .cardBox
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

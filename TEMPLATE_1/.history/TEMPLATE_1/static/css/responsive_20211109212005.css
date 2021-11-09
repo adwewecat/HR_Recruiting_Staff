@@ -65,18 +65,17 @@
         left: 0;
     }
     .toggle.active
-    {
-        position: fixed;
-        z-index: 10000;
-        right: 0;
-        left: initial;
-        color: #fff;
-    }
+        {
+            position: fixed;
+            z-index: 10000;
+            right: 0;
+            left: initial;
+            color: #fff;
+        }
     .toggle.active::before
-    {
-        color: #fff;
-    }
-    
+        {
+            color: #fff;
+        }
     .main,
     .main.active
     {

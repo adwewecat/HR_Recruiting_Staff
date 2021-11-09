@@ -37,9 +37,8 @@
   }
 }
 
-/* Mobile */
-/* < 740px ==> 739px = 46.1875em */
-@media (max-width: 46.1875em)
+
+@media (max-width: 480px)
 {
     .cardBox
     {
@@ -70,18 +69,16 @@
         z-index: 10000;
         right: 0;
         left: initial;
-        color: #fff;
     }
     .toggle.active::before
     {
         color: #fff;
     }
-    
-    .main,
-    .main.active
-    {
-        width: 100%;
-        left: 0;
-    }
+    .cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+}
 
 }

@@ -1,4 +1,4 @@
-@media (max-width: 992px)
+@media (min-width: 46.25em) and (max-width: 63.9375em) and (max-width: 1360px)
 {
    .navigation
   {
@@ -24,7 +24,7 @@
     }
 }
 
-@media (max-width: 768px)
+@media (min-width: 46.25em) and (max-width: 63.9375em)
 {
    .details
   {
@@ -37,8 +37,7 @@
   }
 }
 
-/* Mobile */
-/* < 740px ==> 739px = 46.1875em */
+
 @media (max-width: 46.1875em)
 {
     .cardBox
@@ -70,18 +69,11 @@
         z-index: 10000;
         right: 0;
         left: initial;
-        color: #fff;
     }
     .toggle.active::before
     {
         color: #fff;
     }
-    
-    .main,
-    .main.active
-    {
-        width: 100%;
-        left: 0;
-    }
+
 
 }

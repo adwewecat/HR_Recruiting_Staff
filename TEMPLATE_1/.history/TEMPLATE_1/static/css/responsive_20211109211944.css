@@ -76,12 +76,10 @@
     {
         color: #fff;
     }
-    
     .main,
     .main.active
     {
-        width: 100%;
-        left: 0;
-    }
+ width: 100%;
+  Left: 0;
 
 }

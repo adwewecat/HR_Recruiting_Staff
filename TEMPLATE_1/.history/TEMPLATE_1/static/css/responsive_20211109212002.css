@@ -73,10 +73,9 @@
         color: #fff;
     }
     .toggle.active::before
-    {
-        color: #fff;
-    }
-    
+        {
+            color: #fff;
+        }
     .main,
     .main.active
     {

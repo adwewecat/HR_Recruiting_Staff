@@ -460,13 +460,13 @@ body
 
 .details .recentCustomers table tr td h4 span
 {
-  font-size: 14px;
-  color: #999;
+
 }
+ font-size: 14px;
+ color: #999;
 
 
-.details .recentCustomers table tr:hover,
-.details .recentCustomers table tr:hover td h4 span
+.details .recentCustomers table tr:hover
 {
  background: #03a9f4;
   color: #fff;
@@ -482,6 +482,11 @@ body
  font-weight: 500;
  Line-height: 1.2em;
 }
+
+
+
+
+
 
 
 
