@@ -150,8 +150,7 @@
                     <canvas id="myChart_1"></canvas>
                 </div>
                 <div class="box">
-                    <!-- <canvas id="myChart_2"></canvas> -->
-                    <div id="container"></div>
+                    <canvas id="myChart_2"></canvas>
                 </div>
             </div>
 
@@ -304,7 +303,13 @@
                 labels: ['Kichi', 'Gogi', 'Manwah', 'Ashima'],
                 datasets: [{
                     label: 'Thống Kê Tháng',
-                    data: [1200, 1900, 3000, 5000],
+                        datasets: [{
+                        barPercentage: 0.5,
+                        barThickness: 6,
+                        maxBarThickness: 8,
+                        minBarLength: 2,
+                        data: [10, 20, 30, 40, 50, 60, 70]
+                    }]
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.3)',
                         'rgba(54, 162, 235, 0.3)',
@@ -351,11 +356,6 @@
                 responsive: true,
             }
         });
-
-
-
-
-        
     </script>
     <script>
         // MenuToggle
@@ -368,6 +368,8 @@
             toggle.classList.toggle('active')
         }
 
+
+
         // add hovered khi rê chuột qua thanh menu
         let list = document.querySelectorAll('.navigation li');
         function activelink() {
@@ -378,45 +380,6 @@
         list.forEach((item) =>
             item.addEventListener('mouseover', activelink));
     </script>
-
-
-
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-cartesian.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
-<script>
- anychart.onDocumentReady(function () {
-
-        // create data
-        var data = [
-            { x: "A", value: 637166 },
-            { x: "B", value: 721630 },
-            { x: "C", value: 148662, state: "selected" },
-            { x: "D", value: 78662 },
-            { x: "E", value: 90000 }
-        ];
-
-        // create a chart and set the data
-        var chart = anychart.pie(data);
-
-        // set the explosion range in different states
-        chart.selected().explode("3%");
-        chart.hovered().explode("3%");
-
-        // explode the fourth and fifth slices
-        chart.select([3, 4]);
-
-        // set the chart title
-        chart.title("Thống Kê Sales Theo Brand");
-
-        // set the container id
-        chart.container("container");
-
-        // initiate drawing the chart
-        chart.draw();
-    });
-</script>
-
 
 </body>
 

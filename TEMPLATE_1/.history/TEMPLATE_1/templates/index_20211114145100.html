@@ -400,14 +400,14 @@
         var chart = anychart.pie(data);
 
         // set the explosion range in different states
-        chart.selected().explode("3%");
+        chart.selected().explode("10%");
         chart.hovered().explode("3%");
 
         // explode the fourth and fifth slices
         chart.select([3, 4]);
 
         // set the chart title
-        chart.title("Thống Kê Sales Theo Brand");
+        chart.title("Pie Chart: Exploded Slices");
 
         // set the container id
         chart.container("container");

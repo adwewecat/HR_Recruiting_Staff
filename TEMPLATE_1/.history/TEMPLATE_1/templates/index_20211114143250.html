@@ -382,39 +382,31 @@
 
 
 <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-cartesian.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+
 <script>
- anychart.onDocumentReady(function () {
+    anychart.onDocumentReady(function () {
 
-        // create data
-        var data = [
-            { x: "A", value: 637166 },
-            { x: "B", value: 721630 },
-            { x: "C", value: 148662, state: "selected" },
-            { x: "D", value: 78662 },
-            { x: "E", value: 90000 }
-        ];
+            // create data
+            var data = [
+                { x: "A", value: 637166 },
+                { x: "B", value: 721630 },
+                { x: "C", value: 148662 },
+                { x: "D", value: 78662 },
+                { x: "E", value: 90000 }
+            ];
 
-        // create a chart and set the data
-        var chart = anychart.pie(data);
+            // create a chart and set the data
+            var chart = anychart.pie(data);
 
-        // set the explosion range in different states
-        chart.selected().explode("3%");
-        chart.hovered().explode("3%");
+            // set the chart title
+            chart.title("Pie Chart: Basic Sample");
 
-        // explode the fourth and fifth slices
-        chart.select([3, 4]);
+            // set the container id
+            chart.container("container");
 
-        // set the chart title
-        chart.title("Thống Kê Sales Theo Brand");
-
-        // set the container id
-        chart.container("container");
-
-        // initiate drawing the chart
-        chart.draw();
-    });
+            // initiate drawing the chart
+            chart.draw();
+        });
 </script>
 
 

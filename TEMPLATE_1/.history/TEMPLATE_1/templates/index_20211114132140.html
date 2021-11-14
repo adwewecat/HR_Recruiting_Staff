@@ -149,10 +149,6 @@
                 <div class="box">
                     <canvas id="myChart_1"></canvas>
                 </div>
-                <div class="box">
-                    <!-- <canvas id="myChart_2"></canvas> -->
-                    <div id="container"></div>
-                </div>
             </div>
 
 
@@ -303,7 +299,7 @@
             data: {
                 labels: ['Kichi', 'Gogi', 'Manwah', 'Ashima'],
                 datasets: [{
-                    label: 'Thống Kê Tháng',
+                    label: '# of Votes',
                     data: [1200, 1900, 3000, 5000],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.3)',
@@ -321,41 +317,39 @@
                 }]
             },
             options: {
-                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
             }
         });
         const myChart_1 = new Chart(ctx_1, {
-            type: 'bar',
-            data: {
-                labels: ['Kichi: 1200', 'Gogi: 1900', 'Manwah: 3000', 'Ashima: 5000'],
-                datasets: [{
-                    label: 'Thống Kê Tháng',
-                    data: [1200, 1900, 3000, 5000],
-                    backgroundColor: [
-                        'rgba(201, 203, 207, 0.2)',
-                        'rgba(255, 99, 132, 0.3)',
-                        'rgba(54, 162, 235, 0.3)',
-                        'rgba(255, 206, 86, 0.3)',
-                        'rgba(75, 192, 192, 0.3)',
-                    ],
-                    // borderColor: [
-                    //     'rgba(255, 99, 132, 1)',
-                    //     'rgba(54, 162, 235, 1)',
-                    //     'rgba(255, 206, 86, 1)',
-                    //     'rgba(75, 192, 192, 1)',
-                    // ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-            }
-        });
-
-
-
-
-        
+                type: 'bar',
+                data: {
+                    labels: ['Kichi', 'Gogi', 'Manwah', 'Ashima'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [1200, 1900, 3000, 5000],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.3)',
+                            'rgba(54, 162, 235, 0.3)',
+                            'rgba(255, 206, 86, 0.3)',
+                            'rgba(75, 192, 192, 0.3)',
+                        ],
+                        // borderColor: [
+                        //     'rgba(255, 99, 132, 1)',
+                        //     'rgba(54, 162, 235, 1)',
+                        //     'rgba(255, 206, 86, 1)',
+                        //     'rgba(75, 192, 192, 1)',
+                        // ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive
+                }
+            });
     </script>
     <script>
         // MenuToggle
@@ -368,6 +362,8 @@
             toggle.classList.toggle('active')
         }
 
+
+
         // add hovered khi rê chuột qua thanh menu
         let list = document.querySelectorAll('.navigation li');
         function activelink() {
@@ -378,45 +374,6 @@
         list.forEach((item) =>
             item.addEventListener('mouseover', activelink));
     </script>
-
-
-
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-cartesian.min.js"></script>
-<script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
-<script>
- anychart.onDocumentReady(function () {
-
-        // create data
-        var data = [
-            { x: "A", value: 637166 },
-            { x: "B", value: 721630 },
-            { x: "C", value: 148662, state: "selected" },
-            { x: "D", value: 78662 },
-            { x: "E", value: 90000 }
-        ];
-
-        // create a chart and set the data
-        var chart = anychart.pie(data);
-
-        // set the explosion range in different states
-        chart.selected().explode("3%");
-        chart.hovered().explode("3%");
-
-        // explode the fourth and fifth slices
-        chart.select([3, 4]);
-
-        // set the chart title
-        chart.title("Thống Kê Sales Theo Brand");
-
-        // set the container id
-        chart.container("container");
-
-        // initiate drawing the chart
-        chart.draw();
-    });
-</script>
-
 
 </body>
 

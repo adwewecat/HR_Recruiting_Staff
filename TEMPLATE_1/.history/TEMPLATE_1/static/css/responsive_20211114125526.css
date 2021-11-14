@@ -2,8 +2,8 @@
 {
     .graphBox
     {
-        grid-template-columns: 1fr;
-        height: auto;  
+    grid-template-columns: 1fr;
+    height: auto;  
     }
 
 

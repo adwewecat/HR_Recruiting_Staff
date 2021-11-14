@@ -323,22 +323,15 @@ body
  width: 100%;
  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
  border-radius: 20px;
- display: flex;
- align-items: flex-end;
 }
 
 canvas {
-  max-height: 350px;
+  max-height: 300px;
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: ;
 }
 
-.box #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+
  
 
 
